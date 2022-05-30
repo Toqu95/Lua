@@ -1,0 +1,11 @@
+---------------------------------------------------->
+
+Encrypt:
+    FileEncryption >: Decrypts all letters and numbers in a file and creates an new one in the current directory.
+    String Decryption >: Decrypts a string of the users choise.
+
+Decrypt:
+    FileEncryption >: Encrypts all letters and numbers in a file and creates an new one in the current directory.
+    String Decryption >: Encrypts a string of the users choise.
+
+---------------------------------------------------->

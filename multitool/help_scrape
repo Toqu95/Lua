@@ -1,0 +1,15 @@
+---------------------------------------------------->
+
+scrape -f >: finds the element by selected target
+scrape -f -c >: finds the element by a specified class
+
+scrape -fm >: finds all the elements by selected target
+scrape -fm -c >: finds all the elements by specified class
+
+scrape -u >: prints the url
+
+scrape -s >: prints the source code of the site
+
+scrape -c >: prints the cookies + their keys and values
+
+---------------------------------------------------->

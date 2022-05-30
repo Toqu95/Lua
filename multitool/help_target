@@ -1,0 +1,7 @@
+---------------------------------------------------->
+
+set target >: set the new target.
+
+target >: print out the currently set target.
+
+---------------------------------------------------->

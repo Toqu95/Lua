@@ -1,0 +1,8 @@
+---------------------------------------------------->
+
+help -target >: Displays commands.
+help -scrape >: Displays commands.
+
+exit >: exits the loop.
+
+---------------------------------------------------->

@@ -1,0 +1,340 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Alternet.Editor.Common.v7</name>
+    </assembly>
+    <members>
+        <member name="T:Alternet.Editor.Common.ColorBox">
+            <summary>
+            Represents a combo-box like control used to select color from drop-down list of colors.
+            </summary>
+        </member>
+        <member name="M:Alternet.Editor.Common.ColorBox.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Initializes a new instance of the <c>ColorBox</c> class with specified container.
+            </summary>
+            <param name="container">Specifies IContainer that contains this new instance.</param>
+        </member>
+        <member name="M:Alternet.Editor.Common.ColorBox.#ctor">
+            <summary>
+            Initializes a new instance of the <c>ColorBox</c> class with default settings.
+            </summary>
+        </member>
+        <member name="P:Alternet.Editor.Common.ColorBox.Items">
+            <summary>
+            Gets an object representing the collection of the colors contained in this <c>ColorBox</c>.
+            </summary>
+        </member>
+        <member name="P:Alternet.Editor.Common.ColorBox.Text">
+            <summary>
+            Represents text associated with this control.
+            </summary>
+        </member>
+        <member name="P:Alternet.Editor.Common.ColorBox.SelectedColor">
+            <summary>
+            Gets or sets currently selected color in the <c>ColorBox</c>.
+            </summary>
+        </member>
+        <member name="T:Alternet.Editor.Common.DlgConfirmSave">
+            <summary>
+            Represents dialog box used to confirm saving or not source code or design content before it's closing.
+            </summary>
+        </member>
+        <member name="M:Alternet.Editor.Common.DlgConfirmSave.#ctor">
+            <summary>
+            Initializes a new instance of the <c>DlgConfirmSave</c> class with default settings.
+            </summary>
+        </member>
+        <member name="M:Alternet.Editor.Common.DlgConfirmSave.#ctor(System.String,System.Collections.Generic.IList{System.String})">
+            <summary>
+            Initializes a new instance of the <c>DlgConfirmSave</c> class with specified settings.
+            </summary>
+            <param name="title">Text associated with this new instance.</param>
+            <param name="unsavedFiles">List of modified files to confirm.</param>
+        </member>
+        <member name="F:Alternet.Editor.Common.DlgConfirmSave.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Alternet.Editor.Common.DlgConfirmSave.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Alternet.Editor.Common.DlgConfirmSave.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Alternet.Editor.Common.DlgNewProject.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Alternet.Editor.Common.DlgNewProject.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Alternet.Editor.Common.DlgNewProject.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Alternet.Editor.Common.DotNetProjectExplorer">
+            <summary>
+            Represents methods used to explore particular project in the TreeView control.
+            </summary>
+        </member>
+        <member name="M:Alternet.Editor.Common.DotNetProjectExplorer.#ctor">
+            <summary>
+            Initializes a new instance of the <c>ProjectExplorer</c> class with default settings.
+            </summary>
+        </member>
+        <member name="T:Alternet.Editor.Common.FindResultClickEventArgs">
+            <summary>
+            Provides data for the <c>FindResultClick</c> event.
+            </summary>
+        </member>
+        <member name="P:Alternet.Editor.Common.FindResultClickEventArgs.FileRange">
+            <summary>
+            Gets or sets file range in the source code related to the current element.
+            </summary>
+        </member>
+        <member name="T:Alternet.Editor.Common.FindResults">
+            <summary>
+            Displays list of search results.
+            </summary>
+        </member>
+        <member name="M:Alternet.Editor.Common.FindResults.#ctor">
+            <summary>
+            Initializes a new instance of the <c>FindResults</c> class with default settings.
+            </summary>
+        </member>
+        <member name="E:Alternet.Editor.Common.FindResults.FindResultClick">
+            <summary>
+            Occurs when particular search result was clicked.
+            </summary>
+        </member>
+        <member name="P:Alternet.Editor.Common.FindResults.SelectedRange">
+            <summary>
+            Gets IFileRange related to the selected found result.
+            </summary>
+        </member>
+        <member name="P:Alternet.Editor.Common.FindResults.ResultsAvailable">
+            <summary>
+            Gets a boolean value indicates whether the find results available.
+            </summary>
+        </member>
+        <member name="M:Alternet.Editor.Common.FindResults.AddFindResults(Alternet.Common.IRangeList)">
+            <summary>
+            Fills <c>FindResults</c> content from specified range list.
+            </summary>
+            <param name="references">List of ranges contains search results.</param>
+        </member>
+        <member name="M:Alternet.Editor.Common.FindResults.AddFindResult(Alternet.Common.IFileRange)">
+            <summary>
+            Adds specified range to the collection of search result.
+            </summary>
+            <param name="range"><c>IFileRange</c> to add.</param>
+        </member>
+        <member name="M:Alternet.Editor.Common.FindResults.Clear">
+            <summary>
+            Clears list of results.
+            </summary>
+        </member>
+        <member name="F:Alternet.Editor.Common.FindResults.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Alternet.Editor.Common.FindResults.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Alternet.Editor.Common.FindResults.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Alternet.Editor.Common.FormOpenMode">
+            <summary>
+            Defines design or code mode for TreeNode data.
+            </summary>
+        </member>
+        <member name="F:Alternet.Editor.Common.FormOpenMode.Design">
+            <summary>
+            Specifies design mode.
+            </summary>
+        </member>
+        <member name="F:Alternet.Editor.Common.FormOpenMode.Code">
+            <summary>
+            Specifies code mode.
+            </summary>
+        </member>
+        <member name="T:Alternet.Editor.Common.FormNodeData">
+            <summary>
+            Represents data contained in the TreeNode for the <c>Alternet.Editor.Common.ProjectExplorer</c>.
+            </summary>
+        </member>
+        <member name="M:Alternet.Editor.Common.FormNodeData.#ctor(System.String,System.String,Alternet.Editor.Common.FormOpenMode)">
+            <summary>
+            Initializes a new instance of the <c>FormNodeData</c> class with specified parameters.
+            </summary>
+            <param name="formId">Id of the form related to the node.</param>
+            <param name="fileName">Name of file related to the node.</param>
+            <param name="openMode">Mode of the node.</param>
+        </member>
+        <member name="P:Alternet.Editor.Common.FormNodeData.FileName">
+            <summary>
+            Gets name of the file related to the node.
+            </summary>
+        </member>
+        <member name="P:Alternet.Editor.Common.FormNodeData.FormId">
+            <summary>
+            Gets id of the form related to the node.
+            </summary>
+        </member>
+        <member name="P:Alternet.Editor.Common.FormNodeData.OpenMode">
+            <summary>
+            Gets openmode of the node.
+            </summary>
+        </member>
+        <member name="T:Alternet.Editor.Common.NavigationHistory">
+            <summary>
+            Represents methods to store and restore text location for navigation purposes.
+            </summary>
+        </member>
+        <member name="M:Alternet.Editor.Common.NavigationHistory.GetNextHistory(System.Collections.Generic.KeyValuePair{System.String,Alternet.Common.SymbolLocation}@)">
+            <summary>
+            Moves to the next location in the stored history collection.
+            </summary>
+            <param name="pair">Receives location information.</param>
+            <returns>Index of the current location information in the collection.</returns>
+        </member>
+        <member name="M:Alternet.Editor.Common.NavigationHistory.GetPrevHistory(System.Collections.Generic.KeyValuePair{System.String,Alternet.Common.SymbolLocation}@)">
+            <summary>
+            Moves to the previous location in the stored history collection.
+            </summary>
+            <param name="pair">Receives location information.</param>
+            <returns>Index of the current location information in the collection.</returns>
+        </member>
+        <member name="M:Alternet.Editor.Common.NavigationHistory.AddToHistory(Alternet.Common.SymbolLocation,System.String)">
+            <summary>
+            Adds specified location to the history collection.
+            </summary>
+            <param name="location">SymbolLocation to add.</param>
+            <param name="text">Text in the code at specified location.</param>
+        </member>
+        <member name="M:Alternet.Editor.Common.NavigationHistory.SaveCurrentLocationToHistory(System.Drawing.Point,System.String,System.String)">
+            <summary>
+            Adds specified location to the history collection.
+            </summary>
+            <param name="position">Position in the code to add.</param>
+            <param name="fileName">Name of file where code is located.</param>
+            <param name="code">Text in the code at specified location.</param>
+        </member>
+        <member name="M:Alternet.Editor.Common.NavigationHistory.ClearHistory(System.Windows.Forms.ToolStripItemCollection,System.Windows.Forms.ToolStripItem,System.Windows.Forms.ToolStripItem)">
+            <summary>
+            Clears navigation history and updates all related visual controls.
+            </summary>
+            <param name="items">List of items to be updated accordingly to the history collection.</param>
+            <param name="backward">Visual element related to the backward navigation.</param>
+            <param name="forward">Visual element related to the forward navigation.</param>
+        </member>
+        <member name="M:Alternet.Editor.Common.NavigationHistory.ClearCurrentHistory(System.Windows.Forms.ToolStripItemCollection,System.Windows.Forms.ToolStripItem,System.Windows.Forms.ToolStripItem)">
+            <summary>
+            Clears only forward part of the navigation history and updates all related visual controls.
+            </summary>
+            <param name="items">List of items to be updated accordingly to the history collection.</param>
+            <param name="backward">Visual element related to the backward navigation.</param>
+            <param name="forward">Visual element related to the forward navigation.</param>
+        </member>
+        <member name="M:Alternet.Editor.Common.NavigationHistory.UpdateHistory(System.Windows.Forms.ToolStripItemCollection,System.Int32,System.Windows.Forms.ToolStripItem,System.Windows.Forms.ToolStripItem)">
+            <summary>
+            Updates visual history elements accordingly the new history index.
+            </summary>
+            <param name="items">List of items to be updated accordingly to the history collection.</param>
+            <param name="newIndex">New current history index.</param>
+            <param name="backward">Visual element related to the backward navigation.</param>
+            <param name="forward">Visual element related to the forward navigation.</param>
+        </member>
+        <member name="M:Alternet.Editor.Common.NavigationHistory.UpdateHistory(System.Windows.Forms.ToolStripItemCollection,System.Int32,System.Windows.Forms.ToolStripItem,System.Windows.Forms.ToolStripItem,System.Boolean)">
+            <summary>
+            Updates visual history elements accordingly the new history index.
+            </summary>
+            <param name="items">List of items to be updated accordingly to the history collection.</param>
+            <param name="newIndex">New current history index.</param>
+            <param name="backward">Visual element related to the backward navigation.</param>
+            <param name="forward">Visual element related to the forward navigation.</param>
+            <param name="relative">True if visual controls should display only part of the history list.</param>
+        </member>
+        <member name="M:Alternet.Editor.Common.NavigationHistory.BeginUpdate">
+            <summary>
+            Prevents navigation history updating until calling <c>EndUpdate</c> method.
+            </summary>
+            <returns>Number of history updating locks.</returns>
+        </member>
+        <member name="M:Alternet.Editor.Common.NavigationHistory.EndUpdate">
+            <summary>
+            When implemented by a class, re-enables navigation history updating turned off by calling <c>BeginUpdate</c> method.
+            </summary>
+            <returns>Number of history updating locks.</returns>
+        </member>
+        <member name="T:Alternet.Editor.Common.ProjectExplorer">
+            <summary>
+            Represents methods used to explore particular project in the TreeView control.
+            </summary>
+        </member>
+        <member name="M:Alternet.Editor.Common.ProjectExplorer.#ctor">
+            <summary>
+            Initializes a new instance of the <c>ProjectExplorer</c> class with default settings.
+            </summary>
+        </member>
+        <member name="P:Alternet.Editor.Common.ProjectExplorer.ExplorerTree">
+            <summary>
+            Gets or sets System.Windows.Forms.TreeView control used to explore project's content.
+            </summary>
+        </member>
+        <member name="M:Alternet.Editor.Common.ProjectExplorer.UpdateExplorer(Alternet.Common.Projects.Project)">
+            <summary>
+            Updates explorer content from given project.
+            </summary>
+            <param name="project"><c>Project</c> to explore.</param>
+        </member>
+        <member name="T:Alternet.Editor.Common.ProjectExplorer.NodeSorter">
+            <summary>
+             Create a node sorter that implements the IComparer interface.
+            </summary>
+        </member>
+        <member name="T:Alternet.Editor.Common.SolutionExplorer">
+            <summary>
+            Represents methods used to explore particular solution in the TreeView control.
+            </summary>
+        </member>
+        <member name="M:Alternet.Editor.Common.SolutionExplorer.#ctor">
+            <summary>
+            Initializes a new instance of the <c>SolutionExplorer</c> class with default settings.
+            </summary>
+        </member>
+        <member name="P:Alternet.Editor.Common.SolutionExplorer.ExplorerTree">
+            <summary>
+            Gets or sets System.Windows.Forms.TreeView control used to explore solution's content.
+            </summary>
+        </member>
+        <member name="M:Alternet.Editor.Common.SolutionExplorer.UpdateExplorer(Alternet.Common.Projects.DotNet.DotNetSolution)">
+            <summary>
+            Updates explorer content from given solution.
+            </summary>
+            <param name="solution"><c>Solution</c> to explore.</param>
+        </member>
+    </members>
+</doc>

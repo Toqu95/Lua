@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Alternet.Common.Python.v7</name>
+    </assembly>
+    <members>
+        <member name="T:Alternet.Common.Python.IScriptGlobalItem">
+            <summary>
+            Represents properties declaration to describe a global object from the script.
+            </summary>
+        </member>
+        <member name="P:Alternet.Common.Python.IScriptGlobalItem.Name">
+            <summary>
+            When implemented by a class, gets or sets name of this item.
+            </summary>
+        </member>
+        <member name="P:Alternet.Common.Python.IScriptGlobalItem.Obj">
+            <summary>
+            When implemented by a class, gets or sets object contained by this item.
+            </summary>
+        </member>
+        <member name="T:Alternet.Common.IronPython.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Alternet.Common.IronPython.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Alternet.Common.IronPython.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Alternet.Common.IronPython.Properties.Resources.ParserBundle">
+            <summary>
+              Looks up a localized string similar to .
+            </summary>
+        </member>
+    </members>
+</doc>
